@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Revenue Blueprint™ | LinkedIn Revenue Accelerator | Dr. Jessica Samuels</title>
+<meta name="description" content="An 8-week LinkedIn revenue accelerator group cohort helping founders build visibility, authority, pipeline, and high-ticket clients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:#1a1a2e;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+:root{
+  --violet:#5c2c85;--violet-dark:#3d1d5c;--violet-light:#7a3dab;
+  --gold:#a99037;--gold-light:#c9ae3e;
+  --black:#151820;--silver-light:#f5f5f8;--silver:#e8e8ee;
+  --text:#151820;--text-mid:#3d3d52;--text-light:#6b6b80;--white:#fff;
+}
+h1,h2,h3,h4,h5{line-height:1.2;font-weight:700}
+h1{font-size:clamp(2.2rem,5vw,3.8rem)}
+h2{font-size:clamp(1.8rem,3.5vw,2.8rem)}
+h3{font-size:clamp(1.2rem,2.5vw,1.7rem)}
+h4{font-size:1.05rem;font-weight:700}
+p{line-height:1.75;color:var(--text-mid)}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.eyebrow{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.section-header{text-align:center;margin-bottom:52px}
+.section-header h2{margin-bottom:14px}
+.section-header p{max-width:620px;margin:0 auto;font-size:1rem}
+.divider-gold{width:60px;height:3px;background:var(--gold);margin:20px auto}
+.text-white{color:#fff}
+/* Buttons */
+.btn{display:inline-block;padding:15px 30px;border-radius:50px;font-family:'Open Sans',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.05em;text-decoration:none;cursor:pointer;transition:all .25s;border:2px solid transparent;text-transform:uppercase}
+.btn-gold{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 24px rgba(169,144,55,.3)}
+.btn-outline-white{background:transparent;color:#fff;border-color:#fff}
+.btn-outline-white:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.btn-violet{background:var(--violet);color:#fff;border-color:var(--violet)}
+.btn-violet:hover{background:var(--violet-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(92,44,133,.3)}
+.btn-group{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+/* Nav */
+.nav{position:sticky;top:0;z-index:100;background:rgba(21,24,32,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(169,144,55,.15);padding:14px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.nav-brand{font-size:.95rem;font-weight:800;color:#fff;text-decoration:none}
+.nav-brand .gold{color:var(--gold)}
+.nav .btn{padding:9px 20px;font-size:.78rem}
+.nav-actions{display:flex;gap:10px}
+/* Scarcity bar */
+.scarcity-bar{background:var(--violet);padding:12px 24px;text-align:center;font-size:.82rem;font-weight:600;color:#fff;letter-spacing:.04em}
+.scarcity-bar .gold{color:var(--gold-light)}
+/* Hero */
+.hero{background:var(--black);padding:96px 0 76px;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(92,44,133,.18) 0%,transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hero-content{position:relative;z-index:1}
+.hero h1{color:#fff;font-weight:800;margin-bottom:10px}
+.hero h1 .gold{color:var(--gold)}
+.hero-hook{font-size:clamp(1.15rem,2.3vw,1.5rem);color:rgba(255,255,255,.82);font-style:italic;margin-bottom:18px;line-height:1.45}
+.hero-desc{font-size:.975rem;color:rgba(255,255,255,.65);margin-bottom:32px;line-height:1.8}
+.hero-img-placeholder{background:linear-gradient(135deg,#2a1a3e 0%,#1a1225 100%);border-radius:12px;height:500px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px dashed rgba(169,144,55,.3);color:rgba(169,144,55,.45);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:24px;gap:10px}
+.metrics-strip{background:rgba(255,255,255,.04);border:1px solid rgba(169,144,55,.15);border-radius:8px;padding:22px;margin-top:36px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.metric-item{text-align:center;flex:1;min-width:90px}
+.metric-value{display:block;font-size:1.05rem;font-weight:800;color:var(--gold);line-height:1.2}
+.metric-label{display:block;font-size:.68rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.roi-copy{margin-top:18px;padding-top:18px;border-top:1px solid rgba(169,144,55,.12);font-size:.82rem;color:rgba(255,255,255,.45);font-style:italic;text-align:center}
+.roi-copy strong{color:var(--gold-light);font-style:normal}
+/* Pain */
+.pain-section{background:var(--silver-light)}
+.pain-body{max-width:760px;margin:0 auto;text-align:center}
+.pain-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px 0}
+.pain-tag{background:#fff;border:1px solid var(--silver);border-left:3px solid var(--violet);padding:9px 16px;border-radius:6px;font-size:.875rem;font-weight:600;color:var(--text)}
+.pain-resolution{font-size:1rem;font-weight:700;color:var(--violet);margin-top:20px}
+/* Authority */
+.authority-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.auth-img-placeholder{background:linear-gradient(135deg,#f0eaf8 0%,#e5d9f2 100%);border-radius:12px;height:440px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px dashed rgba(92,44,133,.2);color:rgba(92,44,133,.38);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-align:center;gap:10px}
+.bullet-list{margin:18px 0;list-style:none}
+.bullet-list li{display:flex;gap:10px;padding:6px 0;font-size:.9rem;color:var(--text-mid)}
+.bullet-list li::before{content:'●';color:var(--gold);font-size:.5rem;margin-top:8px;flex-shrink:0}
+/* Proof */
+.proof-section{background:var(--black)}
+.proof-sub{color:var(--gold);font-size:.95rem;font-weight:700;text-align:center;margin-bottom:36px}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.05);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+.proof-card{background:rgba(255,255,255,.03);padding:28px 20px;text-align:center;transition:background .2s}
+.proof-card:hover{background:rgba(92,44,133,.18)}
+.proof-card .val{display:block;font-size:clamp(1.3rem,2.2vw,1.75rem);font-weight:800;color:var(--gold);margin-bottom:7px}
+.proof-card .lbl{font-size:.72rem;color:rgba(255,255,255,.48);text-transform:uppercase;letter-spacing:.08em}
+/* Results */
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.result-card{background:var(--silver-light);border-radius:10px;padding:28px 24px;border-left:4px solid var(--gold);transition:transform .2s,box-shadow .2s}
+.result-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(0,0,0,.08)}
+.result-num{display:inline-block;background:var(--violet);color:#fff;font-size:.68rem;font-weight:700;padding:3px 10px;border-radius:20px;letter-spacing:.08em;margin-bottom:12px}
+.result-card p{font-size:.9rem;font-weight:500;color:var(--text);line-height:1.7}
+/* Trust */
+.trust-section{background:var(--silver-light);padding:44px 0}
+.trust-label{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text-light);margin-bottom:24px}
+.trust-logos{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center}
+.trust-logo{font-size:.76rem;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:.1em;padding:9px 18px;border:1px solid #d0d0d8;border-radius:4px;transition:all .2s;cursor:default}
+.trust-logo:hover{color:var(--violet);border-color:var(--violet)}
+/* Calendar */
+.calendar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.cal-card{background:var(--black);border-radius:12px;padding:32px 26px;color:#fff;position:relative;overflow:hidden}
+.cal-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
+.cal-day{font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}
+.cal-card h3{color:#fff;font-size:1.05rem;margin-bottom:10px}
+.cal-time{font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:14px}
+.cal-card p{font-size:.85rem;color:rgba(255,255,255,.6);line-height:1.7}
+/* Early wins */
+.early-wins-section{background:var(--silver-light)}
+.wins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.win-card{background:#fff;border-radius:10px;padding:26px 22px;border-top:3px solid var(--gold);box-shadow:0 2px 10px rgba(0,0,0,.05);transition:transform .2s,box-shadow .2s}
+.win-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.1)}
+.win-card h4{color:var(--violet);margin-bottom:9px;font-size:.95rem}
+.win-card p{font-size:.85rem;color:var(--text-mid)}
+/* Build 12 */
+.build-section{background:var(--black)}
+.build-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.build-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:24px 20px;transition:all .2s}
+.build-card:hover{background:rgba(92,44,133,.2);border-color:rgba(169,144,55,.3);transform:translateY(-4px)}
+.build-num{font-size:.68rem;font-weight:700;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.build-card h4{color:#fff;font-size:.92rem;margin-bottom:8px}
+.build-outcome{font-size:.82rem;color:var(--gold-light);font-weight:600;margin-bottom:7px}
+.build-card p{font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.65}
+/* Different */
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:48px}
+.cmp-col{padding:28px 24px;border-radius:10px}
+.cmp-col.bad{background:#fdf5f5;border:1px solid #e8d0d0}
+.cmp-col.good{background:#f6f0fc;border:1px solid #d4b8f0}
+.cmp-col h4{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.cmp-col.bad h4{color:#b04040}
+.cmp-col.good h4{color:var(--violet)}
+.cmp-list{list-style:none}
+.cmp-list li{padding:6px 0;font-size:.88rem;color:var(--text-mid);border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:9px}
+.cmp-list li:last-child{border-bottom:none}
+.cmp-list.bad li::before{content:'✕';color:#cc4444;flex-shrink:0}
+.cmp-list.good li::before{content:'✓';color:var(--violet);flex-shrink:0;font-weight:700}
+.bridge{text-align:center;font-size:1.05rem;font-weight:700;color:var(--text);padding:22px;background:var(--silver-light);border-radius:8px;margin-bottom:52px}
+.bridge span{color:var(--violet)}
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.diff-card{background:var(--silver-light);border-radius:10px;padding:28px 24px;border-top:3px solid var(--violet)}
+.diff-card h4{color:var(--violet);margin-bottom:10px;font-size:.95rem}
+.diff-card p{font-size:.85rem;color:var(--text-mid);line-height:1.7}
+.diff-list{margin-top:10px;list-style:none}
+.diff-list li{font-size:.83rem;color:var(--text-mid);padding:4px 0;display:flex;gap:7px}
+.diff-list li::before{content:'●';color:var(--gold);font-size:.45rem;margin-top:7px;flex-shrink:0}
+/* Community */
+.community-section{background:var(--violet);padding:76px 0}
+.community-inner{max-width:780px;margin:0 auto;text-align:center}
+.community-section h2{color:#fff}
+.community-section p{color:rgba(255,255,255,.78)}
+.community-tags{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:24px 0}
+.community-tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:7px 16px;border-radius:40px;font-size:.82rem;color:#fff;font-weight:500}
+.community-highlight{font-size:.98rem;font-weight:700;color:var(--gold-light);margin-top:18px}
+/* Curriculum */
+.curriculum-intro{max-width:680px;margin:0 auto 44px;text-align:center}
+.cur-bullets{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:18px}
+.cur-bullet{background:var(--silver-light);padding:6px 14px;border-radius:20px;font-size:.78rem;font-weight:600;color:var(--text-mid)}
+.week-item{border:1px solid var(--silver);border-radius:8px;margin-bottom:7px;overflow:hidden}
+.week-trigger{width:100%;background:none;border:none;padding:18px 22px;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Open Sans',sans-serif;transition:background .15s}
+.week-trigger:hover{background:var(--silver-light)}
+.week-trigger.active{background:var(--violet)}
+.week-tl{display:flex;align-items:center;gap:14px}
+.week-num{background:var(--gold);color:var(--black);font-size:.68rem;font-weight:800;padding:4px 9px;border-radius:4px;letter-spacing:.05em;flex-shrink:0}
+.week-trigger.active .week-num{background:rgba(255,255,255,.2);color:#fff}
+.week-title{font-size:.95rem;font-weight:700;color:var(--text)}
+.week-trigger.active .week-title{color:#fff}
+.week-icon{font-size:1.1rem;color:var(--text-light);transition:transform .2s;flex-shrink:0}
+.week-trigger.active .week-icon{color:#fff;transform:rotate(180deg)}
+.week-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.week-content.open{max-height:900px}
+.week-inner{padding:24px 22px;background:var(--silver-light);display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.week-col h5{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);margin-bottom:10px}
+.week-list{list-style:none}
+.week-list li{font-size:.84rem;color:var(--text-mid);padding:4px 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:7px}
+.week-list li:last-child{border-bottom:none}
+.week-list li::before{content:'●';color:var(--gold);font-size:.45rem;margin-top:7px;flex-shrink:0}
+.week-outcome{grid-column:1/-1;background:#fff;border-radius:7px;padding:18px 20px;border-left:4px solid var(--violet)}
+.week-outcome h5{color:var(--violet);margin-bottom:7px;font-size:.72rem}
+.week-outcome p{font-size:.85rem;color:var(--text-mid)}
+/* Testimonials */
+.testimonials-section{background:var(--black)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.testi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:28px 24px;transition:border-color .2s}
+.testi-card:hover{border-color:rgba(169,144,55,.3)}
+.testi-card.wide{grid-column:span 2}
+.testi-quote{font-size:1rem;font-weight:700;color:var(--gold-light);font-style:italic;margin-bottom:14px;line-height:1.4}
+.testi-body{font-size:.84rem;color:rgba(255,255,255,.58);line-height:1.75;margin-bottom:20px}
+.testi-author{display:flex;align-items:center;gap:12px}
+.testi-avatar{width:42px;height:42px;border-radius:50%;background:rgba(92,44,133,.3);border:2px solid rgba(169,144,55,.3);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:var(--gold);flex-shrink:0}
+.testi-name{font-size:.88rem;font-weight:700;color:#fff;margin-bottom:2px}
+.testi-role{font-size:.75rem;color:rgba(255,255,255,.4)}
+/* Fit */
+.fit-section{background:var(--silver-light)}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:44px}
+.fit-card{background:#fff;border-radius:10px;padding:32px 28px;box-shadow:0 2px 18px rgba(0,0,0,.06)}
+.fit-card.yes{border-top:4px solid var(--violet)}
+.fit-card.no{border-top:4px solid #cc4444}
+.fit-card h3{font-size:1.05rem;margin-bottom:20px}
+.fit-card.yes h3{color:var(--violet)}
+.fit-card.no h3{color:#cc4444}
+.fit-list{list-style:none}
+.fit-list li{padding:9px 0;font-size:.875rem;color:var(--text-mid);border-bottom:1px solid var(--silver);display:flex;gap:10px;line-height:1.5}
+.fit-list li:last-child{border-bottom:none}
+.fit-list.yes li::before{content:'✓';color:var(--violet);font-weight:700;flex-shrink:0}
+.fit-list.no li::before{content:'✗';color:#cc4444;flex-shrink:0;font-weight:700}
+/* Investment */
+.investment-section{background:#fff}
+.invest-intro{max-width:680px;margin:0 auto 44px;text-align:center}
+.invest-chips{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin:14px 0}
+.invest-chip{background:var(--silver-light);border:1px solid var(--silver);padding:6px 14px;border-radius:20px;font-size:.8rem;color:var(--text-mid);font-weight:500}
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:880px;margin:0 auto}
+.pricing-card{border-radius:12px;padding:36px 32px;border:2px solid var(--silver);position:relative;transition:transform .2s,box-shadow .2s}
+.pricing-card:hover{transform:translateY(-6px);box-shadow:0 18px 46px rgba(0,0,0,.1)}
+.pricing-card.featured{border-color:var(--violet);background:linear-gradient(135deg,#faf7fd 0%,#f2eaf9 100%)}
+.pricing-badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--black);font-size:.68rem;font-weight:800;padding:4px 14px;border-radius:20px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.pricing-option{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);margin-bottom:10px}
+.pricing-card h3{font-size:1.15rem;color:var(--text);margin-bottom:10px}
+.pricing-amount{font-size:2.8rem;font-weight:800;color:var(--violet);line-height:1;margin-bottom:4px}
+.pricing-payment{font-size:.82rem;color:var(--text-light);margin-bottom:24px}
+.pricing-divider{border:none;border-top:1px solid var(--silver);margin:20px 0}
+.pricing-features{list-style:none;margin-bottom:28px}
+.pricing-features li{font-size:.85rem;color:var(--text-mid);padding:7px 0;border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:9px}
+.pricing-features li:last-child{border-bottom:none}
+.pricing-features li::before{content:'✓';color:var(--violet);font-weight:700;flex-shrink:0}
+/* Bio */
+.bio-section{background:var(--silver-light)}
+.bio-grid{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:start}
+.bio-img-placeholder{background:linear-gradient(135deg,#e8ddf5 0%,#d5c5ee 100%);border-radius:12px;height:460px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px dashed rgba(92,44,133,.3);color:rgba(92,44,133,.38);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-align:center;gap:10px}
+.bio-content h2{color:var(--text);margin-bottom:18px}
+.bio-content p{font-size:.925rem;color:var(--text-mid);margin-bottom:12px;line-height:1.8}
+.bio-closing{font-size:.975rem;font-weight:600;color:var(--violet);border-left:3px solid var(--gold);padding-left:15px;margin-top:18px;font-style:italic;line-height:1.65}
+/* FAQ */
+.faq-inner{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--silver)}
+.faq-trigger{width:100%;background:none;border:none;padding:20px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;font-family:'Open Sans',sans-serif}
+.faq-q{font-size:.95rem;font-weight:700;color:var(--text);line-height:1.4}
+.faq-icon{font-size:1.4rem;color:var(--violet);flex-shrink:0;transition:transform .2s;font-weight:300;line-height:1}
+.faq-trigger.active .faq-icon{transform:rotate(45deg)}
+.faq-trigger.active .faq-q{color:var(--violet)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-answer.open{max-height:600px}
+.faq-answer-inner{padding:0 0 20px}
+.faq-answer-inner p,.faq-answer-inner li{font-size:.88rem;color:var(--text-mid);line-height:1.75}
+.faq-answer-inner ul{margin:9px 0 0;list-style:none}
+.faq-answer-inner ul li{padding:3px 0;display:flex;gap:7px}
+.faq-answer-inner ul li::before{content:'●';color:var(--gold);font-size:.45rem;margin-top:7px;flex-shrink:0}
+/* Final CTA */
+.final-cta{background:var(--black);padding:96px 0;text-align:center;position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:650px;height:650px;background:radial-gradient(circle,rgba(92,44,133,.16) 0%,transparent 70%);pointer-events:none}
+.final-inner{position:relative;z-index:1;max-width:740px;margin:0 auto}
+.final-cta h2{color:#fff;font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:18px}
+.final-cta h2 .gold{color:var(--gold)}
+.final-cta p{color:rgba(255,255,255,.68);font-size:.975rem;margin-bottom:32px;line-height:1.8}
+.final-micro{margin-top:24px;display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.final-micro span{font-size:.78rem;color:rgba(255,255,255,.38);display:flex;align-items:center;gap:5px}
+.final-micro span::before{content:'●';color:var(--gold);font-size:.45rem}
+/* Footer */
+.footer{background:#0d0f15;padding:28px 0;text-align:center}
+.footer p{font-size:.78rem;color:rgba(255,255,255,.28)}
+.footer a{color:rgba(255,255,255,.38);text-decoration:none}
+.footer a:hover{color:var(--gold)}
+/* Responsive */
+@media(max-width:1024px){.build-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){
+  .section{padding:56px 0}
+  .hero{padding:64px 0 52px}
+  .hero-grid,.authority-grid,.bio-grid{grid-template-columns:1fr}
+  .hero-img-placeholder,.auth-img-placeholder,.bio-img-placeholder{height:260px;order:-1}
+  .proof-grid{grid-template-columns:repeat(2,1fr)}
+  .results-grid{grid-template-columns:1fr 1fr}
+  .calendar-grid,.fit-grid,.pricing-grid{grid-template-columns:1fr}
+  .wins-grid{grid-template-columns:1fr 1fr}
+  .build-grid{grid-template-columns:repeat(2,1fr)}
+  .diff-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .testi-card.wide{grid-column:span 1}
+  .comparison{grid-template-columns:1fr}
+  .week-inner{grid-template-columns:1fr}
+  .week-outcome{grid-column:1}
+  .metrics-strip{flex-direction:column;align-items:center}
+}
+@media(max-width:480px){
+  h1{font-size:1.85rem}h2{font-size:1.55rem}
+  .btn{padding:13px 22px;font-size:.8rem}
+  .btn-group{flex-direction:column}
+  .results-grid{grid-template-columns:1fr}
+  .wins-grid{grid-template-columns:1fr}
+  .build-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- SCARCITY BAR -->
+<div class="scarcity-bar">
+  <span class="gold">Only 20 founder spots available</span> &nbsp;·&nbsp; Cohort: <strong>July 14 – September 3</strong> &nbsp;·&nbsp; Payment plans from $240/month
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-brand">Evolve Career &nbsp;<span class="gold">·</span>&nbsp; The Revenue Blueprint™</a>
+    <div class="nav-actions">
+      <a href="#book" class="btn btn-outline-white">Book a Call</a>
+      <a href="#apply" class="btn btn-gold">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">For Founders, Consultants, Coaches, Fractional Leaders &amp; Executive Advisors</span>
+        <h1>The Revenue Blueprint™ <span class="gold">(TRB)</span></h1>
+        <p class="hero-hook">Your expertise already sells in the room.<br>Now it's time for it to generate revenue online.</p>
+        <p class="hero-desc">An 8-week LinkedIn revenue accelerator group cohort helping founders build visibility, authority, pipeline, and high-ticket clients using LinkedIn, AI workflows, sales systems, and commercialization strategy.</p>
+        <div class="btn-group">
+          <a href="#book" class="btn btn-gold">Book a Strategy Call</a>
+          <a href="#apply" class="btn btn-outline-white">Apply for the Cohort</a>
+        </div>
+        <div class="metrics-strip">
+          <div class="metric-item"><span class="metric-value">$1M+</span><span class="metric-label">Business Built</span></div>
+          <div class="metric-item"><span class="metric-value">6-Figure</span><span class="metric-label">Months</span></div>
+          <div class="metric-item"><span class="metric-value">20K+</span><span class="metric-label">Audience</span></div>
+          <div class="metric-item"><span class="metric-value">80%+</span><span class="metric-label">Profit Margins</span></div>
+          <div class="metric-item"><span class="metric-value">Top 1%</span><span class="metric-label">LinkedIn Creator</span></div>
+        </div>
+        <p class="roi-copy"><strong>One premium client could cover your entire investment.</strong><br>This is not about vanity metrics. It's about visibility that drives revenue.</p>
+      </div>
+      <div>
+        <div class="hero-img-placeholder">
+          <span>📸</span>
+          Replace with Jessica speaking visual<br><small style="opacity:.6">Keynote / professional headshot recommended</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="section pain-section">
+  <div class="container">
+    <div class="pain-body">
+      <span class="eyebrow" style="color:var(--violet)">The Cost of Staying Stuck</span>
+      <h2>What Happens If Nothing Changes?</h2>
+      <p>Another month relying on inconsistent referrals. Another quarter wondering why your content isn't converting into clients. Another sales cycle carrying the pressure of growth alone. Another year undercharging for expertise that should already command premium opportunities.</p>
+      <p style="margin-top:14px">The cost of unclear positioning isn't just visibility. It's:</p>
+      <div class="pain-tags">
+        <div class="pain-tag">Missed Revenue</div>
+        <div class="pain-tag">Inconsistent Pipeline</div>
+        <div class="pain-tag">Lost Partnerships</div>
+        <div class="pain-tag">Low Authority Positioning</div>
+        <div class="pain-tag">Burnout</div>
+        <div class="pain-tag">Stalled Business Growth</div>
+      </div>
+      <p class="pain-resolution">The Revenue Blueprint™ (TRB) was built to help founders change that trajectory.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHORITY -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="authority-grid">
+      <div><div class="auth-img-placeholder"><span>📸</span>Replace with founder workshop or strategy session imagery</div></div>
+      <div>
+        <span class="eyebrow">The Framework Behind the Results</span>
+        <h2>The LinkedIn commercialization framework behind a bootstrapped $1M+ business, 6-figure months, and 80%+ profit margins.</h2>
+        <div class="divider-gold" style="margin:18px 0"></div>
+        <p>Founders of health, life sciences, and tech startups are brilliant at medicine, research, engineering, and innovation. Marketing and sales usually aren't the skillsets they were trained for.</p>
+        <p style="margin-top:10px">Jessica understands that firsthand. After being asked to lead marketing and sales as a Chief Talent Officer, she spent more than a decade mastering LinkedIn growth, commercialization strategy, sales systems, and founder visibility. Using LinkedIn as a business growth engine, she:</p>
+        <ul class="bullet-list" style="margin-top:14px">
+          <li>Bootstrapped a $1M+ business</li>
+          <li>Built a 20K+ audience</li>
+          <li>Generated 6-figure months</li>
+          <li>Achieved 80%+ profit margins</li>
+          <li>Secured B2B and B2C clients through LinkedIn</li>
+          <li>Built strategic partnerships and speaking opportunities</li>
+        </ul>
+        <p style="margin-top:12px">Today, she helps founders and executives of 6–7 figure businesses use LinkedIn to grow revenue, build authority, generate demand, and win clients faster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF METRICS -->
+<section class="section proof-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Social Proof</span>
+      <h2 class="text-white">Jessica's April 2026 LinkedIn Performance</h2>
+      <p class="proof-sub">Top 1% Of 1.2 Billion LinkedIn Users</p>
+    </div>
+    <div class="proof-grid">
+      <div class="proof-card"><span class="val">~2M</span><span class="lbl">Impressions</span></div>
+      <div class="proof-card"><span class="val">27K+</span><span class="lbl">Engagements</span></div>
+      <div class="proof-card"><span class="val">4,506</span><span class="lbl">New Followers</span></div>
+      <div class="proof-card"><span class="val">$125K+</span><span class="lbl">Q1 2026 Revenue</span></div>
+      <div class="proof-card"><span class="val">20K+</span><span class="lbl">LinkedIn Audience</span></div>
+      <div class="proof-card"><span class="val">6-Figure</span><span class="lbl">Months Generated</span></div>
+      <div class="proof-card"><span class="val">80%+</span><span class="lbl">Profit Margins</span></div>
+      <div class="proof-card"><span class="val">1,000+</span><span class="lbl">Professionals Coached</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT RESULTS -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Proven Results</span>
+      <h2>Client Wins</h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-card"><span class="result-num">Result 01</span><p>Secured multiple 6-figure B2B contracts using LinkedIn authority positioning and commercialization strategy.</p></div>
+      <div class="result-card"><span class="result-num">Result 02</span><p>Landed $30K/month fractional and advisory retainers through strategic visibility and outreach systems.</p></div>
+      <div class="result-card"><span class="result-num">Result 03</span><p>Booked multiple 5-figure speaking, consulting, and coaching clients through LinkedIn content and sales systems.</p></div>
+      <div class="result-card"><span class="result-num">Result 04</span><p>Closed a $37K client deal within weeks and later secured a 6-figure international contract.</p></div>
+      <div class="result-card"><span class="result-num">Result 05</span><p>Landed a $35K consulting deal after refining positioning and LinkedIn visibility strategy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-section">
+  <div class="container">
+    <p class="trust-label">Trusted by professionals from</p>
+    <div class="trust-logos">
+      <div class="trust-logo">WBL</div>
+      <div class="trust-logo">WIB</div>
+      <div class="trust-logo">Deerfield</div>
+      <div class="trust-logo">Children's Hospital of Pittsburgh</div>
+      <div class="trust-logo">Breaking Into the Boardroom</div>
+      <div class="trust-logo">Carahsoft</div>
+      <div class="trust-logo">NPHI</div>
+    </div>
+  </div>
+</div>
+
+<!-- CALENDAR -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Live Weekly Accelerator</span>
+      <h2>Live Weekly Accelerator Schedule</h2>
+      <p>Three live sessions per week designed for maximum implementation and founder support.</p>
+    </div>
+    <div class="calendar-grid">
+      <div class="cal-card">
+        <div class="cal-day">Tuesday Sessions</div>
+        <h3>Strategy &amp; Revenue Growth</h3>
+        <div class="cal-time">3:00 PM – 4:30 PM EST</div>
+        <p>Starting Tuesday, July 14<br><br>Revenue growth strategy, positioning, visibility systems, LinkedIn authority, content, and commercialization lessons.</p>
+      </div>
+      <div class="cal-card">
+        <div class="cal-day">Wednesday Sessions</div>
+        <h3>Founder Workshops</h3>
+        <div class="cal-time">12:00 PM – 1:30 PM EST</div>
+        <p>Starting Wednesday, July 15<br><br>Founder workshops, sales systems, implementation coaching, operational systems, and live hot seats.</p>
+      </div>
+      <div class="cal-card">
+        <div class="cal-day">Thursday Q&amp;A</div>
+        <h3>Founder Q&amp;A</h3>
+        <div class="cal-time">10:00 AM EST</div>
+        <p>Starting Thursday, July 16<br><br>Weekly live Q&amp;A focused on implementation support, visibility, outreach strategy, positioning, pipeline growth, and revenue acceleration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIRST 2 WEEKS -->
+<section class="section early-wins-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Immediate Momentum</span>
+      <h2>What You'll Start Building in the First 2 Weeks</h2>
+      <p>Early wins that build momentum fast.</p>
+    </div>
+    <div class="wins-grid">
+      <div class="win-card"><h4>Clearer Positioning</h4><p>Clarify your messaging, offers, and ideal clients so people immediately understand your value.</p></div>
+      <div class="win-card"><h4>Stronger LinkedIn Presence</h4><p>Optimize your profile and visibility strategy to increase credibility and inbound opportunities.</p></div>
+      <div class="win-card"><h4>Revenue-Driven Content</h4><p>Create content designed to generate conversations, authority, and pipeline — not just engagement.</p></div>
+      <div class="win-card"><h4>Founder Confidence</h4><p>Reduce overwhelm and gain a clearer commercialization roadmap for your business growth.</p></div>
+      <div class="win-card"><h4>Outreach Systems</h4><p>Build simple founder-friendly outreach systems that generate qualified conversations consistently.</p></div>
+      <div class="win-card"><h4>Monetization Clarity</h4><p>Identify ways to monetize your expertise through consulting, advisory, speaking, coaching, and partnerships.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL BUILD (12 CARDS) -->
+<section class="section build-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">The Full System</span>
+      <h2 class="text-white">Build The Systems Behind Founder Visibility, Pipeline &amp; Revenue Growth</h2>
+    </div>
+    <div class="build-grid">
+      <div class="build-card"><div class="build-num">01</div><h4>Revenue Positioning</h4><p class="build-outcome">Clarify exactly what you sell, who you serve, and why premium clients should choose you.</p><p>Build a premium positioning strategy that strengthens authority, simplifies messaging, and shortens the path to trust and conversion.</p></div>
+      <div class="build-card"><div class="build-num">02</div><h4>LinkedIn Authority</h4><p class="build-outcome">Transform your LinkedIn presence into a high-converting business asset.</p><p>Optimize your profile, company page, and visibility strategy to attract inbound opportunities, strategic partnerships, and executive-level credibility.</p></div>
+      <div class="build-card"><div class="build-num">03</div><h4>Content Systems</h4><p class="build-outcome">Create strategic content that drives visibility, conversations, and revenue.</p><p>Build a repeatable content engine using storytelling, thought leadership, AI workflows, and commercialization-focused messaging.</p></div>
+      <div class="build-card"><div class="build-num">04</div><h4>Outreach &amp; Pipeline</h4><p class="build-outcome">Build scalable outreach systems without sounding transactional.</p><p>Implement founder-friendly DM systems, prospecting workflows, and relationship-driven strategies that create qualified sales conversations faster.</p></div>
+      <div class="build-card"><div class="build-num">05</div><h4>Sales Confidence</h4><p class="build-outcome">Sell your services with more confidence, clarity, and structure.</p><p>Learn premium sales frameworks, pricing strategy, objection handling, discovery call systems, and high-ticket conversion techniques.</p></div>
+      <div class="build-card"><div class="build-num">06</div><h4>AI Workflows</h4><p class="build-outcome">Save hours every week using AI-powered systems.</p><p>Use GPT, Claude, Canva, MidJourney, and automation workflows to streamline visibility, sales prep, outreach, and founder operations.</p></div>
+      <div class="build-card"><div class="build-num">07</div><h4>Lead Generation Systems</h4><p class="build-outcome">Build a pipeline beyond referrals.</p><p>Create lead-generation workflows designed to consistently attract aligned clients, strategic opportunities, and inbound demand.</p></div>
+      <div class="build-card"><div class="build-num">08</div><h4>Founder Visibility</h4><p class="build-outcome">Become known for your expertise online.</p><p>Position yourself as a trusted authority through strategic content, executive branding, podcast visibility, and thought leadership systems.</p></div>
+      <div class="build-card"><div class="build-num">09</div><h4>Offer Ecosystem</h4><p class="build-outcome">Build offers designed for recurring revenue growth.</p><p>Structure consulting, advisory, speaking, coaching, and fractional services into scalable commercialization pathways.</p></div>
+      <div class="build-card"><div class="build-num">10</div><h4>Strategic Partnerships</h4><p class="build-outcome">Use LinkedIn to build relationships that accelerate growth.</p><p>Create partnerships, referral ecosystems, speaking opportunities, and executive collaborations that expand visibility and revenue.</p></div>
+      <div class="build-card"><div class="build-num">11</div><h4>Executive Brand Presence</h4><p class="build-outcome">Strengthen how you show up professionally online and offline.</p><p>Develop a founder brand that communicates authority, confidence, expertise, and executive-level leadership.</p></div>
+      <div class="build-card"><div class="build-num">12</div><h4>Business Infrastructure</h4><p class="build-outcome">Build backend systems that support long-term growth.</p><p>Implement workflows, CRMs, SOPs, operational systems, and scalable processes that reduce overwhelm and support sustainable revenue growth.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">What Makes TRB Different</span>
+      <h2>This Is Not Another "Post Content Every Day" LinkedIn Program</h2>
+    </div>
+    <div class="comparison">
+      <div class="cmp-col bad">
+        <h4>Most LinkedIn Programs Teach</h4>
+        <ul class="cmp-list bad">
+          <li>Post consistently</li><li>Increase engagement</li><li>Write hooks</li><li>Grow followers</li>
+        </ul>
+      </div>
+      <div class="cmp-col good">
+        <h4>TRB Focuses On</h4>
+        <ul class="cmp-list good">
+          <li>Commercialization</li><li>Pipeline growth</li><li>Sales systems</li><li>Premium positioning</li><li>Monetization strategy</li><li>Founder infrastructure</li><li>Visibility that drives revenue</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bridge">TRB bridges the gap between visibility and commercialization.<br><span>Because visibility without revenue is not a business strategy.</span></div>
+    <div class="diff-grid">
+      <div class="diff-card"><h4>Built By Someone Who Actually Built The Business</h4><p>Jessica built a bootstrapped $1M+ business while leading executive teams, building partnerships, raising a family, and learning how to commercialize expertise in real time. Everything inside TRB comes from lived founder experience.</p></div>
+      <div class="diff-card"><h4>Built Around Revenue, Not Just Visibility</h4><p>TRB focuses on:</p><ul class="diff-list"><li>Pipeline</li><li>Sales conversations</li><li>Strategic partnerships</li><li>High-ticket clients</li><li>Consulting deals</li><li>Recurring revenue systems</li></ul></div>
+      <div class="diff-card"><h4>Tested Across Multiple Industries</h4><p>Every framework has been implemented with:</p><ul class="diff-list"><li>Startup founders</li><li>Consultants &amp; coaches</li><li>Healthcare organizations</li><li>Life sciences companies</li><li>Enterprise leadership teams</li><li>Solo business owners</li></ul></div>
+      <div class="diff-card"><h4>Build Revenue Without Massive Overhead</h4><p>TRB teaches founders how to grow strategically without overbuilding too early.</p><ul class="diff-list"><li>Validate offers faster</li><li>Keep operating costs lean</li><li>Use AI strategically</li><li>Avoid unnecessary hiring</li><li>Maximize profitability intentionally</li></ul></div>
+      <div class="diff-card"><h4>Grow Alongside Ambitious Founders</h4><p>You'll build relationships with founders, consultants, executives, advisors, and service providers actively building visibility, refining offers, and scaling revenue in real time. The room matters.</p></div>
+      <div class="diff-card"><h4>Not Another Passive Online Course</h4><p>TRB includes:</p><ul class="diff-list"><li>Live coaching</li><li>Founder hot seats</li><li>Implementation sessions</li><li>Q&amp;A support</li><li>Strategic feedback</li><li>Sales coaching</li><li>Commercialization guidance</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community-section">
+  <div class="container">
+    <div class="community-inner">
+      <span class="eyebrow" style="color:var(--gold)">Collaborative Growth</span>
+      <h2>The Room You Build In Matters</h2>
+      <div class="divider-gold"></div>
+      <p>One of the most valuable parts of TRB is the founder community itself. You'll build alongside:</p>
+      <div class="community-tags">
+        <span class="community-tag">Consultants</span><span class="community-tag">Startup Founders</span><span class="community-tag">Executives</span><span class="community-tag">Advisors</span><span class="community-tag">Coaches</span><span class="community-tag">Fractional Leaders</span><span class="community-tag">Subject Matter Experts</span>
+      </div>
+      <p>who are actively growing visibility, refining offers, building businesses, and testing commercialization strategies in real time.</p>
+      <p class="community-highlight">This is not passive learning. It's collaborative founder growth.</p>
+      <p style="margin-top:14px;color:rgba(255,255,255,.7)">The conversations, partnerships, referrals, visibility opportunities, and accountability created inside the room often become just as valuable as the curriculum itself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="curriculum-intro">
+      <span class="eyebrow">8-Week Curriculum</span>
+      <h2>Inside The Revenue Blueprint™ (TRB)</h2>
+      <p>Each week includes:</p>
+      <div class="cur-bullets">
+        <span class="cur-bullet">2 live implementation lessons</span><span class="cur-bullet">Founder hot seats</span><span class="cur-bullet">Strategic coaching</span><span class="cur-bullet">Live Q&amp;A support</span><span class="cur-bullet">Templates</span><span class="cur-bullet">AI workflows</span><span class="cur-bullet">Sales systems</span><span class="cur-bullet">Accountability</span>
+      </div>
+    </div>
+    <div id="curriculum">
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 1</span><span class="week-title">Revenue Positioning &amp; Business Blueprint</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Topics Covered</h5><ul class="week-list"><li>Unique positioning strategy</li><li>Ideal client profile development</li><li>Premium offer design</li><li>Revenue growth planning</li><li>Founder monetization strategy</li><li>KPI dashboards</li><li>Messaging refinement</li><li>Business model clarity</li></ul></div>
+            <div class="week-col"><h5>Ways to Monetize</h5><ul class="week-list"><li>Consulting</li><li>Fractional leadership</li><li>Advisory retainers</li><li>Executive coaching</li><li>Paid speaking</li><li>Workshops &amp; training</li><li>Strategic partnerships</li><li>Brand sponsorships</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Leave with a clear monetization roadmap, stronger messaging, offer clarity, ICP clarity, revenue growth targets, and commercialization strategy.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 2</span><span class="week-title">LinkedIn Branding &amp; Authority Positioning</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Lesson 1: Profiles &amp; Company Pages</h5><ul class="week-list"><li>LinkedIn profile optimization</li><li>Banner strategy</li><li>Executive positioning</li><li>Company page visibility</li><li>Founder storytelling</li><li>Authority branding</li></ul></div>
+            <div class="week-col"><h5>Lesson 2: Content &amp; Thought Leadership</h5><ul class="week-list"><li>Content systems</li><li>Thought leadership frameworks</li><li>Educational content</li><li>Authority-based posting</li><li>Storytelling strategy</li><li>Founder visibility systems</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Leave with an optimized LinkedIn presence, a 30-day content calendar, stronger authority positioning, visibility strategy, and thought leadership direction.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 3</span><span class="week-title">Outreach, DMs &amp; Pipeline Systems</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Topics Covered</h5><ul class="week-list"><li>LinkedIn outreach systems</li><li>DM strategy</li><li>Prospecting workflows</li><li>Lead generation systems</li><li>Appointment-setting systems</li><li>Inbox management</li><li>Conversation conversion</li></ul></div>
+            <div class="week-col"><h5>Tools</h5><ul class="week-list"><li>Kondo</li><li>Dripify</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Know how to start qualified conversations, reduce fear around outreach, create scalable prospecting workflows, and improve pipeline consistency.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 4</span><span class="week-title">Sales Systems &amp; Conversion</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Topics Covered</h5><ul class="week-list"><li>Discovery calls</li><li>Pricing conversations</li><li>Offer positioning</li><li>Buyer psychology</li><li>Sales confidence</li><li>Objection handling</li><li>VSL systems</li><li>Sales playbooks</li><li>Lead tracking</li></ul></div>
+            <div class="week-col"><h5>Tech Stack</h5><ul class="week-list"><li>Stripe</li><li>Thrivecart</li><li>Stan Store</li><li>CRM systems</li><li>Fathom AI sales prep</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Build a repeatable sales process, improve conversion confidence, structure premium sales conversations, and reduce sales anxiety.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 5</span><span class="week-title">Business Operations, Team &amp; Tech</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Admin &amp; Marketing Systems</h5><ul class="week-list"><li>Email systems</li><li>Calendar workflows</li><li>Landing pages</li><li>Graphics workflows</li><li>Content systems</li><li>LinkedIn commenting strategy</li></ul></div>
+            <div class="week-col"><h5>Operations &amp; Biz Dev</h5><ul class="week-list"><li>Lead generation systems</li><li>CRM workflows</li><li>SOP development</li><li>VA onboarding</li><li>OBM management</li><li>Google Workspace systems</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Delegate more effectively, reduce operational overwhelm, create scalable workflows, and build stronger business infrastructure.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 6</span><span class="week-title">Brand Building &amp; Audience Growth</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Lesson 1: Lead Magnets &amp; Funnels</h5><ul class="week-list"><li>Lead magnets</li><li>Landing pages</li><li>Funnel strategy</li><li>Website optimization</li><li>Conversion systems</li></ul></div>
+            <div class="week-col"><h5>Lesson 2: Newsletters &amp; Webinars</h5><ul class="week-list"><li>LinkedIn newsletters</li><li>Kit email systems</li><li>Webinar strategy</li><li>Audience nurturing</li><li>Thought leadership growth</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Build audience-nurturing systems, strengthen lead conversion systems, and create long-term visibility assets.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 7</span><span class="week-title">Sales Systems Part 2</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Topics Covered</h5><ul class="week-list"><li>Advanced objection handling</li><li>Premium positioning</li><li>Buyer psychology</li><li>Follow-up systems</li><li>Referral systems</li><li>Strategic partnerships</li><li>Revenue acceleration strategy</li></ul></div>
+            <div class="week-col"><h5>&nbsp;</h5></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Improve high-ticket sales confidence, strengthen conversion systems, refine premium positioning, and improve follow-up strategy.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-item">
+        <button class="week-trigger" onclick="toggleWeek(this)">
+          <div class="week-tl"><span class="week-num">WEEK 8</span><span class="week-title">90-Day Revenue Growth Plan</span></div>
+          <span class="week-icon">▾</span>
+        </button>
+        <div class="week-content">
+          <div class="week-inner">
+            <div class="week-col"><h5>Topics Covered</h5><ul class="week-list"><li>Content strategy review</li><li>Revenue planning</li><li>KPI dashboards</li><li>Pipeline review</li><li>Conversion metrics</li><li>Visibility strategy</li><li>Commercialization roadmap</li></ul></div>
+            <div class="week-col"><h5>You Leave With</h5><ul class="week-list"><li>A 90-day growth roadmap</li><li>Visibility systems</li><li>Content systems</li><li>Revenue infrastructure</li><li>Commercialization strategy</li><li>Scalable founder systems</li></ul></div>
+            <div class="week-outcome"><h5>Founder Outcome</h5><p>Leave with a complete 90-day commercialization roadmap, fully implemented visibility and revenue systems, and the infrastructure to continue generating opportunities long after the cohort ends.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Client Wins</span>
+      <h2 class="text-white">Client Wins &amp; Founder Transformations</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card wide">
+        <p class="testi-quote">"One of the most influential partners in my growth as a leader and business owner."</p>
+        <p class="testi-body">"I've had the privilege of working with Dr. Jessica as my executive coach for the past several years, and she has been one of the most influential partners in my growth as a leader and business owner. She challenged my thinking, strengthened my decision-making, and helped me gain clarity during seasons of growth and transition. She also helped me build a brand presence that truly resonates with others and reflects the impact I want to make. If you're looking for strategic clarity, personal insight, and a genuine commitment to your growth, I cannot recommend Dr. Jessica highly enough."</p>
+        <div class="testi-author"><div class="testi-avatar">PB</div><div><div class="testi-name">Patrick Booth</div><div class="testi-role">CEO, MSP Tech Firm</div></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"She helped me turn my lived experience into undeniable market demand."</p>
+        <p class="testi-body">"She helped me cut through the noise, define a clear niche, and craft an offer that felt true to my strengths and identity. That alignment changed everything. It removed the overwhelm around selling, replaced it with calm and confident clarity, and directly led to me closing my first 4-figure client."</p>
+        <div class="testi-author"><div class="testi-avatar">DK</div><div><div class="testi-name">Donnetta Kay</div><div class="testi-role">Former Google Senior Leader</div></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"Her coaching is unmatched."</p>
+        <p class="testi-body">"Dr. Jessica helped me rethink how I positioned and priced my services while growing and scaling my company using LinkedIn. Her direction was clear, strategic, and practical. She helped me see how to structure my business differently in order to reach consistent $10K months."</p>
+        <div class="testi-author"><div class="testi-avatar">MR</div><div><div class="testi-name">Matt Redden</div><div class="testi-role">Branding &amp; Event Photographer</div></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"In one hour, I gained more clarity than entire $10K coaching programs."</p>
+        <p class="testi-body">"She helped me refine my offer and pricing so it finally felt aligned and confident. No fluff. No BS. Just clarity, honesty, strategy, and heart."</p>
+        <div class="testi-author"><div class="testi-avatar">NM</div><div><div class="testi-name">Nikki Maginn</div><div class="testi-role">Leadership Consultant &amp; Speaker</div></div></div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">"She helped me secure new clients and completely elevate my business visibility."</p>
+        <p class="testi-body">"Jessica helped me secure new clients through her methods for proposal creation, LinkedIn visibility, and client engagement strategy. She helped me revamp both my personal and company LinkedIn pages and maximize exposure for aligned opportunities. Most importantly, she helped me build confidence as a business owner."</p>
+        <div class="testi-author"><div class="testi-avatar">EP</div><div><div class="testi-name">Ericka Porter</div><div class="testi-role">CEO &amp; Organizational Development Consultant</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IS THIS FOR YOU -->
+<section class="section fit-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Right Fit Assessment</span>
+      <h2>Is The Revenue Blueprint™ (TRB) Right For You?</h2>
+      <p>TRB was built for founders, consultants, coaches, advisors, executives, and service providers ready to stop guessing and start building a visibility and revenue system that actually works.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card yes">
+        <h3>This Is For You If…</h3>
+        <ul class="fit-list yes">
+          <li>You know you're exceptional at what you do, but your visibility doesn't reflect your expertise</li>
+          <li>You're tired of relying only on referrals for business growth</li>
+          <li>You've taken LinkedIn courses before and all they taught you was how to post — not how to generate revenue</li>
+          <li>You want a clearer commercialization strategy for your expertise</li>
+          <li>You're struggling with inconsistent sales and pipeline</li>
+          <li>You want to attract higher-quality clients and opportunities</li>
+          <li>You're building a consulting, coaching, advisory, speaking, or fractional business</li>
+          <li>You want a leaner, more profitable business model without massive overhead</li>
+          <li>You're ready to become more visible online without feeling performative</li>
+          <li>You want systems that continue working long after the cohort ends</li>
+          <li>You want implementation support, not just information</li>
+          <li>You're serious about building long-term founder authority</li>
+        </ul>
+      </div>
+      <div class="fit-card no">
+        <h3>This Is Probably NOT For You If…</h3>
+        <ul class="fit-list no">
+          <li>You're looking for overnight success or shortcuts</li>
+          <li>You want passive video content without implementation</li>
+          <li>You're unwilling to test outreach, visibility, and sales strategies</li>
+          <li>You only care about vanity metrics and follower counts</li>
+          <li>You're not prepared to consistently show up for your business growth</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTMENT -->
+<section class="section investment-section">
+  <div class="container">
+    <div class="invest-intro">
+      <span class="eyebrow">Your Investment</span>
+      <h2>Investment</h2>
+      <p>The Revenue Blueprint™ (TRB) was designed to help founders build long-term visibility, authority, pipeline, and commercialization systems that continue generating opportunities long after the cohort ends. This is not simply an investment in LinkedIn growth. It's an investment in:</p>
+      <div class="invest-chips">
+        <span class="invest-chip">Revenue Infrastructure</span><span class="invest-chip">Founder Positioning</span><span class="invest-chip">Sales Systems</span><span class="invest-chip">Authority-Building</span><span class="invest-chip">Commercialization Strategy</span><span class="invest-chip">Long-Term Business Growth</span>
+      </div>
+      <p style="font-size:1rem;font-weight:700;color:var(--violet);margin-top:16px">One premium client could cover your investment.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-option">Option 1</div>
+        <h3>TRB Group Accelerator</h3>
+        <div class="pricing-amount">$4,000</div>
+        <p class="pricing-payment">Payment plans available as low as $240/month</p>
+        <hr class="pricing-divider">
+        <ul class="pricing-features">
+          <li>Full 8-week accelerator</li><li>Two live sessions weekly</li><li>Weekly founder Q&amp;A</li><li>Founder hot seats</li><li>Commercialization strategy</li><li>LinkedIn visibility systems</li><li>Sales systems</li><li>Outreach frameworks</li><li>AI workflows</li><li>Templates &amp; resources</li><li>Community support</li><li>Accountability &amp; implementation coaching</li>
+        </ul>
+        <a href="#apply" class="btn btn-violet" style="width:100%;text-align:center;display:block">Apply for the Cohort</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Personalized</div>
+        <div class="pricing-option">Option 2</div>
+        <h3>TRB Hybrid Experience</h3>
+        <div class="pricing-amount">$5,000</div>
+        <p class="pricing-payment">Payment plans available as low as $240/month</p>
+        <hr class="pricing-divider">
+        <ul class="pricing-features">
+          <li>Everything in Group Accelerator</li><li>Two private 1:1 strategy sessions with Jessica</li><li>Personalized visibility feedback</li><li>Customized commercialization guidance</li><li>Direct sales strategy coaching</li><li>Personalized offer refinement</li><li>Higher-touch founder advisory support</li>
+        </ul>
+        <a href="#apply" class="btn btn-gold" style="width:100%;text-align:center;display:block">Apply for the Cohort</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section class="section bio-section">
+  <div class="container">
+    <div class="bio-grid">
+      <div><div class="bio-img-placeholder"><span>📸</span>Replace with Dr. Jessica's professional photo</div></div>
+      <div class="bio-content">
+        <span class="eyebrow">Meet Your Instructor</span>
+        <h2>Hi, I'm Dr. Jessica</h2>
+        <p>I know firsthand how difficult it can feel to build visibility, generate revenue consistently, and grow a business while carrying the pressure of leadership.</p>
+        <p>Before building my own business, I spent years leading executive teams across healthcare, education, technology, and government organizations. Then I stepped into entrepreneurship myself.</p>
+        <p>I bootstrapped a $1M+ business, built a 20K+ audience, generated 6-figure months, and created multiple revenue streams using LinkedIn as a growth engine. But it didn't happen overnight. I spent years learning sales, positioning, commercialization, content strategy, outreach systems, founder visibility, operational infrastructure, AI workflows, pricing, partnerships, and business development through real-world implementation, mistakes, growth, and wins.</p>
+        <p>Today, I help founders and executives build visibility, authority, and revenue systems without needing massive teams, huge ad budgets, or complicated funnels. Everything I teach inside TRB comes from lived founder experience, enterprise consulting work, commercialization strategy, executive leadership, and real client implementation.</p>
+        <p class="bio-closing">If a Chief Talent Officer can learn how to generate revenue through LinkedIn, build a $1M+ business, secure enterprise partnerships, and create multiple revenue streams — so can you. That belief sits at the center of everything I teach inside TRB.</p>
+        <div class="btn-group" style="margin-top:26px">
+          <a href="#book" class="btn btn-violet" id="book">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:#fff">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-inner">
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">Is this beginner friendly?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Whether you are launching your first offer or scaling an existing business, TRB is designed to help founders implement visibility and revenue systems at their current stage of growth.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">What industries do you support?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Jessica has supported founders, executives, and organizations across healthcare, life sciences, technology, education, consulting, coaching, government, and professional services.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">What if I'm uncomfortable with sales?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>TRB helps founders develop more confidence around visibility, outreach, pricing, and premium sales conversations through practical systems and live coaching support.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">Is this just a LinkedIn content program?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>No. TRB is a commercialization accelerator focused on visibility, authority, sales systems, pipeline growth, and founder revenue generation. Content is only one part of the ecosystem.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">I've already taken LinkedIn courses before. How is this different?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Most LinkedIn programs focus on content creation, posting consistency, engagement tactics, and audience growth. TRB focuses on commercialization. You'll learn how to:</p><ul><li>Position expertise strategically</li><li>Generate qualified pipeline</li><li>Strengthen authority</li><li>Improve sales confidence</li><li>Build visibility systems</li><li>Create revenue-generating offers</li><li>Attract higher-value opportunities</li></ul><p style="margin-top:10px">The goal is not simply to grow an audience. The goal is to build a business that generates revenue through visibility, authority, and commercialization systems.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">How much time should I expect weekly?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Most founders spend between 2–5 hours per week implementing lessons, outreach systems, visibility strategies, and commercialization frameworks.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">Will I receive personalized feedback?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. TRB includes live coaching, founder hot seats, Q&amp;A support, and strategic implementation feedback throughout the program.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">What happens after the cohort ends?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>You leave with:</p><ul><li>A 90-day commercialization roadmap</li><li>Visibility systems</li><li>Outreach frameworks</li><li>Sales infrastructure</li><li>AI workflows</li><li>Revenue growth systems</li><li>Scalable founder strategies</li></ul><p style="margin-top:10px">All designed to continue supporting growth long after the accelerator ends.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" onclick="toggleFaq(this)"><span class="faq-q">Do I need a large audience already?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner"><p>No. Many founders inside TRB are building visibility from smaller but highly strategic audiences. The focus is on attracting aligned opportunities — not chasing vanity metrics.</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="apply">
+  <div class="container">
+    <div class="final-inner">
+      <span class="eyebrow">Ready to Build?</span>
+      <h2>Your LinkedIn Presence Should Be Generating <span class="gold">Revenue</span> — Not Just Engagement.</h2>
+      <p>Build the systems, positioning, visibility, and sales infrastructure needed to attract high-ticket clients, strategic partnerships, and long-term founder growth.</p>
+      <div class="btn-group" style="justify-content:center">
+        <a href="#book" class="btn btn-gold">Book a Strategy Call</a>
+        <a href="#" class="btn btn-outline-white">Apply for the Cohort</a>
+      </div>
+      <div class="final-micro">
+        <span>Applications reviewed to maintain cohort quality</span>
+        <span>Only 20 spots available</span>
+        <span>Payment plans as low as $240/month</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Evolve Career &nbsp;·&nbsp; Dr. Jessica Samuels &nbsp;·&nbsp; <a href="https://www.evolvecareer.com">evolvecareer.com</a></p>
+  </div>
+</footer>
+
+<script>
+function toggleWeek(btn){
+  var content=btn.nextElementSibling;
+  var isOpen=content.classList.contains('open');
+  document.querySelectorAll('.week-content').forEach(function(c){c.classList.remove('open')});
+  document.querySelectorAll('.week-trigger').forEach(function(b){b.classList.remove('active')});
+  if(!isOpen){content.classList.add('open');btn.classList.add('active')}
+}
+function toggleFaq(btn){
+  var answer=btn.nextElementSibling;
+  var isOpen=answer.classList.contains('open');
+  document.querySelectorAll('.faq-answer').forEach(function(a){a.classList.remove('open')});
+  document.querySelectorAll('.faq-trigger').forEach(function(b){b.classList.remove('active')});
+  if(!isOpen){answer.classList.add('open');btn.classList.add('active')}
+}
+</script>
+</body>
+</html>
