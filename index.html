@@ -42,7 +42,11 @@ p{line-height:1.75;color:var(--text-mid)}
 .btn-violet:hover{background:var(--violet-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(92,44,133,.3)}
 .btn-group{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 /* Nav */
-.nav{position:sticky;top:0;z-index:100;background:rgba(21,24,32,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(169,144,55,.15);padding:14px 0}
+.utility-bar{background:#1a0a2e;padding:8px 0}
+.utility-bar a{color:rgba(255,255,255,.65);font-size:.78rem;text-decoration:none;display:flex;align-items:center;gap:6px}
+.utility-bar a:hover{color:var(--gold)}
+.utility-bar-inner{display:flex;justify-content:flex-end;gap:28px;align-items:center}
+.nav{position:sticky;top:0;z-index:100;background:var(--violet);border-bottom:1px solid rgba(169,144,55,.2);padding:14px 0}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .nav-brand{font-size:.95rem;font-weight:800;color:#fff;text-decoration:none}
 .nav-brand .gold{color:var(--gold)}
@@ -52,8 +56,8 @@ p{line-height:1.75;color:var(--text-mid)}
 .scarcity-bar{background:var(--violet);padding:12px 24px;text-align:center;font-size:.82rem;font-weight:600;color:#fff;letter-spacing:.04em}
 .scarcity-bar .gold{color:var(--gold-light)}
 /* Hero */
-.hero{background:var(--black);padding:96px 0 76px;overflow:hidden;position:relative}
-.hero::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(92,44,133,.18) 0%,transparent 70%);pointer-events:none}
+.hero{background:var(--violet);padding:96px 0 76px;overflow:hidden;position:relative}
+.hero::before{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 70%);pointer-events:none}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .hero-content{position:relative;z-index:1}
 .hero h1{color:#fff;font-weight:800;margin-bottom:10px}
@@ -80,7 +84,7 @@ p{line-height:1.75;color:var(--text-mid)}
 .bullet-list li{display:flex;gap:10px;padding:6px 0;font-size:.9rem;color:var(--text-mid)}
 .bullet-list li::before{content:'●';color:var(--gold);font-size:.5rem;margin-top:8px;flex-shrink:0}
 /* Proof */
-.proof-section{background:var(--black)}
+.proof-section{background:var(--violet)}
 .proof-sub{color:var(--gold);font-size:.95rem;font-weight:700;text-align:center;margin-bottom:36px}
 .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.05);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.07)}
 .proof-card{background:rgba(255,255,255,.03);padding:28px 20px;text-align:center;transition:background .2s}
@@ -101,7 +105,7 @@ p{line-height:1.75;color:var(--text-mid)}
 .trust-logo:hover{color:var(--violet);border-color:var(--violet)}
 /* Calendar */
 .calendar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
-.cal-card{background:var(--black);border-radius:12px;padding:32px 26px;color:#fff;position:relative;overflow:hidden}
+.cal-card{background:var(--violet-dark);border-radius:12px;padding:32px 26px;color:#fff;position:relative;overflow:hidden}
 .cal-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}
 .cal-day{font-size:.72rem;font-weight:700;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:7px}
 .cal-card h3{color:#fff;font-size:1.05rem;margin-bottom:10px}
@@ -115,7 +119,7 @@ p{line-height:1.75;color:var(--text-mid)}
 .win-card h4{color:var(--violet);margin-bottom:9px;font-size:.95rem}
 .win-card p{font-size:.85rem;color:var(--text-mid)}
 /* Build 12 */
-.build-section{background:var(--black)}
+.build-section{background:var(--violet-dark)}
 .build-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
 .build-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:24px 20px;transition:all .2s}
 .build-card:hover{background:rgba(92,44,133,.2);border-color:rgba(169,144,55,.3);transform:translateY(-4px)}
@@ -180,7 +184,7 @@ p{line-height:1.75;color:var(--text-mid)}
 .week-outcome h5{color:var(--violet);margin-bottom:7px;font-size:.72rem}
 .week-outcome p{font-size:.85rem;color:var(--text-mid)}
 /* Testimonials */
-.testimonials-section{background:var(--black)}
+.testimonials-section{background:var(--violet-dark)}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
 .testi-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:28px 24px;transition:border-color .2s}
 .testi-card:hover{border-color:rgba(169,144,55,.3)}
@@ -247,7 +251,7 @@ p{line-height:1.75;color:var(--text-mid)}
 .faq-answer-inner ul li{padding:3px 0;display:flex;gap:7px}
 .faq-answer-inner ul li::before{content:'●';color:var(--gold);font-size:.45rem;margin-top:7px;flex-shrink:0}
 /* Final CTA */
-.final-cta{background:var(--black);padding:96px 0;text-align:center;position:relative;overflow:hidden}
+.final-cta{background:var(--violet-dark);padding:96px 0;text-align:center;position:relative;overflow:hidden}
 .final-cta::before{content:'';position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:650px;height:650px;background:radial-gradient(circle,rgba(92,44,133,.16) 0%,transparent 70%);pointer-events:none}
 .final-inner{position:relative;z-index:1;max-width:740px;margin:0 auto}
 .final-cta h2{color:#fff;font-size:clamp(1.7rem,3.2vw,2.5rem);margin-bottom:18px}
@@ -293,6 +297,14 @@ p{line-height:1.75;color:var(--text-mid)}
 </head>
 <body>
 
+<!-- UTILITY BAR -->
+<div class="utility-bar">
+  <div class="container utility-bar-inner">
+    <a href="mailto:jessica@evolvecareer.com">✉ jessica@evolvecareer.com</a>
+    <a href="https://www.linkedin.com/in/jessicasamuels" target="_blank">in Connect on LinkedIn</a>
+  </div>
+</div>
+
 <!-- SCARCITY BAR -->
 <div class="scarcity-bar">
   <span class="gold">Only 20 founder spots available</span> &nbsp;·&nbsp; Cohort: <strong>July 14 – September 3</strong> &nbsp;·&nbsp; Payment plans from $240/month
@@ -303,7 +315,6 @@ p{line-height:1.75;color:var(--text-mid)}
   <div class="container nav-inner">
     <a href="#" class="nav-brand">Evolve Career &nbsp;<span class="gold">·</span>&nbsp; The Revenue Blueprint™</a>
     <div class="nav-actions">
-      <a href="#book" class="btn btn-outline-white">Book a Call</a>
       <a href="#apply" class="btn btn-gold">Apply Now</a>
     </div>
   </div>
@@ -319,8 +330,7 @@ p{line-height:1.75;color:var(--text-mid)}
         <p class="hero-hook">Your expertise already sells in the room.<br>Now it's time for it to generate revenue online.</p>
         <p class="hero-desc">An 8-week LinkedIn revenue accelerator group cohort helping founders build visibility, authority, pipeline, and high-ticket clients using LinkedIn, AI workflows, sales systems, and commercialization strategy.</p>
         <div class="btn-group">
-          <a href="#book" class="btn btn-gold">Book a Strategy Call</a>
-          <a href="#apply" class="btn btn-outline-white">Apply for the Cohort</a>
+          <a href="#apply" class="btn btn-gold">Apply for the Cohort</a>
         </div>
         <div class="metrics-strip">
           <div class="metric-item"><span class="metric-value">$1M+</span><span class="metric-label">Business Built</span></div>
@@ -826,7 +836,7 @@ p{line-height:1.75;color:var(--text-mid)}
         <p>Today, I help founders and executives build visibility, authority, and revenue systems without needing massive teams, huge ad budgets, or complicated funnels. Everything I teach inside TRB comes from lived founder experience, enterprise consulting work, commercialization strategy, executive leadership, and real client implementation.</p>
         <p class="bio-closing">If a Chief Talent Officer can learn how to generate revenue through LinkedIn, build a $1M+ business, secure enterprise partnerships, and create multiple revenue streams — so can you. That belief sits at the center of everything I teach inside TRB.</p>
         <div class="btn-group" style="margin-top:26px">
-          <a href="#book" class="btn btn-violet" id="book">Book a Strategy Call</a>
+          <a href="#apply" class="btn btn-violet">Apply for the Cohort</a>
         </div>
       </div>
     </div>
@@ -899,8 +909,7 @@ p{line-height:1.75;color:var(--text-mid)}
       <h2>Your LinkedIn Presence Should Be Generating <span class="gold">Revenue</span> — Not Just Engagement.</h2>
       <p>Build the systems, positioning, visibility, and sales infrastructure needed to attract high-ticket clients, strategic partnerships, and long-term founder growth.</p>
       <div class="btn-group" style="justify-content:center">
-        <a href="#book" class="btn btn-gold">Book a Strategy Call</a>
-        <a href="#" class="btn btn-outline-white">Apply for the Cohort</a>
+        <a href="#apply" class="btn btn-gold">Apply for the Cohort</a>
       </div>
       <div class="final-micro">
         <span>Applications reviewed to maintain cohort quality</span>
