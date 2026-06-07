@@ -100,9 +100,9 @@ p{line-height:1.75;color:var(--text-mid)}
 /* Trust */
 .trust-section{background:var(--silver-light);padding:44px 0}
 .trust-label{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text-light);margin-bottom:24px}
-.trust-logos{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center}
-.trust-logo{height:500px;width:500px;object-fit:contain;opacity:1;mix-blend-mode:multiply;transition:all .3s;cursor:default}
-.trust-logo:hover{transform:scale(1.05)}
+.trust-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center}
+.trust-logo{width:100%;height:160px;object-fit:contain;mix-blend-mode:multiply;transition:transform .3s;cursor:default}
+.trust-logo:hover{transform:scale(1.08)}
 /* Calendar */
 .calendar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
 .cal-card{background:var(--violet-dark);border-radius:12px;padding:32px 26px;color:#fff;position:relative;overflow:hidden}
