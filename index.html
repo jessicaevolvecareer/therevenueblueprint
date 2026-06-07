@@ -101,8 +101,8 @@ p{line-height:1.75;color:var(--text-mid)}
 .trust-section{background:var(--silver-light);padding:44px 0}
 .trust-label{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text-light);margin-bottom:24px}
 .trust-logos{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;align-items:center}
-.trust-logo{font-size:.76rem;font-weight:700;color:#aaa;text-transform:uppercase;letter-spacing:.1em;padding:9px 18px;border:1px solid #d0d0d8;border-radius:4px;transition:all .2s;cursor:default}
-.trust-logo:hover{color:var(--violet);border-color:var(--violet)}
+.trust-logo{height:48px;width:auto;max-width:160px;object-fit:contain;filter:grayscale(1);opacity:.55;transition:all .3s;cursor:default}
+.trust-logo:hover{filter:grayscale(0);opacity:1}
 /* Calendar */
 .calendar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
 .cal-card{background:var(--violet-dark);border-radius:12px;padding:32px 26px;color:#fff;position:relative;overflow:hidden}
@@ -301,7 +301,7 @@ p{line-height:1.75;color:var(--text-mid)}
 <div class="utility-bar">
   <div class="container utility-bar-inner">
     <a href="mailto:jessica@evolvecareer.com">✉ jessica@evolvecareer.com</a>
-    <a href="https://www.linkedin.com/in/jessicasamuels" target="_blank">in Connect on LinkedIn</a>
+    <a href="https://www.linkedin.com/in/evolvecareer" target="_blank">in Connect on LinkedIn</a>
   </div>
 </div>
 
@@ -315,7 +315,7 @@ p{line-height:1.75;color:var(--text-mid)}
   <div class="container nav-inner">
     <a href="#" class="nav-brand">Evolve Career &nbsp;<span class="gold">·</span>&nbsp; The Revenue Blueprint™</a>
     <div class="nav-actions">
-      <a href="#apply" class="btn btn-gold">Apply Now</a>
+      <a href="https://evolvecareer.thrivecart.com/the-revenue-blueprint-trb/" target="_blank" class="btn btn-gold">Apply Now</a>
     </div>
   </div>
 </nav>
@@ -330,7 +330,7 @@ p{line-height:1.75;color:var(--text-mid)}
         <p class="hero-hook">Your expertise already sells in the room.<br>Now it's time for it to generate revenue online.</p>
         <p class="hero-desc">An 8-week LinkedIn revenue accelerator group cohort helping founders build visibility, authority, pipeline, and high-ticket clients using LinkedIn, AI workflows, sales systems, and commercialization strategy.</p>
         <div class="btn-group">
-          <a href="#apply" class="btn btn-gold">Apply for the Cohort</a>
+          <a href="https://evolvecareer.thrivecart.com/the-revenue-blueprint-trb/" target="_blank" class="btn btn-gold">Apply for the Cohort</a>
         </div>
         <div class="metrics-strip">
           <div class="metric-item"><span class="metric-value">$1M+</span><span class="metric-label">Business Built</span></div>
@@ -342,10 +342,7 @@ p{line-height:1.75;color:var(--text-mid)}
         <p class="roi-copy"><strong>One premium client could cover your entire investment.</strong><br>This is not about vanity metrics. It's about visibility that drives revenue.</p>
       </div>
       <div>
-        <div class="hero-img-placeholder">
-          <span>📸</span>
-          Replace with Jessica speaking visual<br><small style="opacity:.6">Keynote / professional headshot recommended</small>
-        </div>
+        <img src="jessica-speaking.jpg" alt="Dr. Jessica Samuels speaking at WBL" style="width:100%;height:500px;object-fit:cover;border-radius:12px;">
       </div>
     </div>
   </div>
@@ -376,7 +373,7 @@ p{line-height:1.75;color:var(--text-mid)}
 <section class="section" style="background:#fff">
   <div class="container">
     <div class="authority-grid">
-      <div><div class="auth-img-placeholder"><span>📸</span>Replace with founder workshop or strategy session imagery</div></div>
+      <div><img src="jessica-headshot.jpg" alt="Dr. Jessica Samuels" style="width:100%;height:440px;object-fit:cover;object-position:top;border-radius:12px;"></div>
       <div>
         <span class="eyebrow">The Framework Behind the Results</span>
         <h2>The LinkedIn commercialization framework behind a bootstrapped $1M+ business, 6-figure months, and 80%+ profit margins.</h2>
@@ -440,13 +437,12 @@ p{line-height:1.75;color:var(--text-mid)}
   <div class="container">
     <p class="trust-label">Trusted by professionals from</p>
     <div class="trust-logos">
-      <div class="trust-logo">WBL</div>
-      <div class="trust-logo">WIB</div>
-      <div class="trust-logo">Deerfield</div>
-      <div class="trust-logo">Children's Hospital of Pittsburgh</div>
-      <div class="trust-logo">Breaking Into the Boardroom</div>
-      <div class="trust-logo">Carahsoft</div>
-      <div class="trust-logo">NPHI</div>
+      <img class="trust-logo" src="logo-wib.png" alt="Women In Bio">
+      <img class="trust-logo" src="logo-deerfield.png" alt="Deerfield">
+      <img class="trust-logo" src="logo-childrens.png" alt="The Children's Institute">
+      <img class="trust-logo" src="logo-bitb.png" alt="Breaking Into the Boardroom">
+      <img class="trust-logo" src="logo-carahsoft.png" alt="Carahsoft">
+      <img class="trust-logo" src="logo-nphi.png" alt="NPHI">
     </div>
   </div>
 </div>
@@ -794,29 +790,18 @@ p{line-height:1.75;color:var(--text-mid)}
       </div>
       <p style="font-size:1rem;font-weight:700;color:var(--violet);margin-top:16px">One premium client could cover your investment.</p>
     </div>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="pricing-option">Option 1</div>
-        <h3>TRB Group Accelerator</h3>
-        <div class="pricing-amount">$4,000</div>
-        <p class="pricing-payment">Payment plans available as low as $240/month</p>
-        <hr class="pricing-divider">
-        <ul class="pricing-features">
-          <li>Full 8-week accelerator</li><li>Two live sessions weekly</li><li>Weekly founder Q&amp;A</li><li>Founder hot seats</li><li>Commercialization strategy</li><li>LinkedIn visibility systems</li><li>Sales systems</li><li>Outreach frameworks</li><li>AI workflows</li><li>Templates &amp; resources</li><li>Community support</li><li>Accountability &amp; implementation coaching</li>
-        </ul>
-        <a href="#apply" class="btn btn-violet" style="width:100%;text-align:center;display:block">Apply for the Cohort</a>
-      </div>
+    <div style="max-width:520px;margin:0 auto">
       <div class="pricing-card featured">
-        <div class="pricing-badge">Most Personalized</div>
-        <div class="pricing-option">Option 2</div>
-        <h3>TRB Hybrid Experience</h3>
+        <div class="pricing-badge">Premium Experience</div>
+        <div class="pricing-option">TRB Hybrid Experience</div>
+        <h3>8-Week LinkedIn Revenue Accelerator</h3>
         <div class="pricing-amount">$5,000</div>
         <p class="pricing-payment">Payment plans available as low as $240/month</p>
         <hr class="pricing-divider">
         <ul class="pricing-features">
-          <li>Everything in Group Accelerator</li><li>Two private 1:1 strategy sessions with Jessica</li><li>Personalized visibility feedback</li><li>Customized commercialization guidance</li><li>Direct sales strategy coaching</li><li>Personalized offer refinement</li><li>Higher-touch founder advisory support</li>
+          <li>Full 8-week accelerator</li><li>Two live sessions weekly</li><li>Weekly founder Q&amp;A</li><li>Founder hot seats</li><li>Two private 1:1 strategy sessions with Jessica</li><li>Personalized visibility feedback</li><li>Customized commercialization guidance</li><li>Direct sales strategy coaching</li><li>Personalized offer refinement</li><li>Higher-touch founder advisory support</li><li>AI workflows, templates &amp; resources</li><li>Community support &amp; accountability</li>
         </ul>
-        <a href="#apply" class="btn btn-gold" style="width:100%;text-align:center;display:block">Apply for the Cohort</a>
+        <a href="https://evolvecareer.thrivecart.com/the-revenue-blueprint-trb/" target="_blank" class="btn btn-gold" style="width:100%;text-align:center;display:block">Apply for the Cohort</a>
       </div>
     </div>
   </div>
@@ -826,7 +811,7 @@ p{line-height:1.75;color:var(--text-mid)}
 <section class="section bio-section">
   <div class="container">
     <div class="bio-grid">
-      <div><div class="bio-img-placeholder"><span>📸</span>Replace with Dr. Jessica's professional photo</div></div>
+      <div><img src="jessica-headshot.jpg" alt="Dr. Jessica Samuels" style="width:100%;height:460px;object-fit:cover;object-position:top;border-radius:12px;"></div>
       <div class="bio-content">
         <span class="eyebrow">Meet Your Instructor</span>
         <h2>Hi, I'm Dr. Jessica</h2>
@@ -836,7 +821,7 @@ p{line-height:1.75;color:var(--text-mid)}
         <p>Today, I help founders and executives build visibility, authority, and revenue systems without needing massive teams, huge ad budgets, or complicated funnels. Everything I teach inside TRB comes from lived founder experience, enterprise consulting work, commercialization strategy, executive leadership, and real client implementation.</p>
         <p class="bio-closing">If a Chief Talent Officer can learn how to generate revenue through LinkedIn, build a $1M+ business, secure enterprise partnerships, and create multiple revenue streams — so can you. That belief sits at the center of everything I teach inside TRB.</p>
         <div class="btn-group" style="margin-top:26px">
-          <a href="#apply" class="btn btn-violet">Apply for the Cohort</a>
+          <a href="https://evolvecareer.thrivecart.com/the-revenue-blueprint-trb/" target="_blank" class="btn btn-violet">Apply for the Cohort</a>
         </div>
       </div>
     </div>
@@ -909,7 +894,7 @@ p{line-height:1.75;color:var(--text-mid)}
       <h2>Your LinkedIn Presence Should Be Generating <span class="gold">Revenue</span> — Not Just Engagement.</h2>
       <p>Build the systems, positioning, visibility, and sales infrastructure needed to attract high-ticket clients, strategic partnerships, and long-term founder growth.</p>
       <div class="btn-group" style="justify-content:center">
-        <a href="#apply" class="btn btn-gold">Apply for the Cohort</a>
+        <a href="https://evolvecareer.thrivecart.com/the-revenue-blueprint-trb/" target="_blank" class="btn btn-gold">Apply for the Cohort</a>
       </div>
       <div class="final-micro">
         <span>Applications reviewed to maintain cohort quality</span>
